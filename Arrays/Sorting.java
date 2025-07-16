@@ -24,33 +24,36 @@ public class Sorting {
         //     }
         // }
         // Binaryarray(arr);
-        Moving_zeroes(arr);
+        Moving_zeroes_right(arr);
+        Moving_zeroes_front(arr);
         
     
      }
-    // static void Binaryarray(int[] arr){
+    static void Binaryarray(int[] arr){
     
-    //     for(int i=0;i<arr.length;i++){
-    //         if(arr[i]%2==0){
-    //            arr[i]=0;
-    //         }
-    //         else arr[i]=1;
-    //     }
-    //     System.out.println(Arrays.toString(arr));
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]%2==0){
+               arr[i]=0;
+            }
+            else arr[i]=1;
+        }
+        System.out.println(Arrays.toString(arr));
 
-    // }
+    }
 
-    static void Moving_zeroes(int[] arr){
-        // int index=0;
-        // for(int i=0;i<arr.length;i++){
-        //       if(arr[i]!=0){
-        //         arr[index++]=arr[i];
-        //       }
-        // }
-        // for(int i=index;i<arr.length;i++){
-        //     arr[index++]=0;
+    static void Moving_zeroes_right(int[] arr){
+        int index=0;
+        for(int i=0;i<arr.length;i++){
+              if(arr[i]!=0){
+                arr[index++]=arr[i];
+              }
+        }
+        for(int i=index;i<arr.length;i++){
+            arr[index++]=0;
              
-        // }
+        }
+    }
+    static void Moving_zeroes_front(int[] arr){
          int index=arr.length-1;
         for(int i=arr.length-1;i>-1;i--){
               if(arr[i]!=0){

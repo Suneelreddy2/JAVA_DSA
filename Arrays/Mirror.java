@@ -11,6 +11,7 @@ public class Mirror {
             arr[i]=sc.nextInt();
         }
         System.out.print(Mirror(arr,size));
+        sc.close();
     }
     static boolean Mirror(int[] arr,int size){
         if (size%2!=0) return false;
@@ -20,6 +21,6 @@ public class Mirror {
             }
         }
         return true;
-
+      
     }
 }
