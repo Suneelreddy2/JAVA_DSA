@@ -1,4 +1,4 @@
-package Project_Oops;
+package Projects;
 class BankAccount {
     int accountNumber;
     double balance;
@@ -65,7 +65,7 @@ class FDAccount extends BankAccount {
         return maturity;
     }
 }
-public class Bankmanager {
+public class Bankmanager_Inheritance {
     public static void main(String[] args) {
         System.out.println("Savings Account");
         SavingsAccount sa = new SavingsAccount(101, 1000, 5);
